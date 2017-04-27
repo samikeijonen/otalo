@@ -1,6 +1,6 @@
 # Oppimisen talo
 
-Otalo is a child theme of [Checathlon theme](https://foxland.fi/downloads/checahtlon/).
+Otalo is a child theme of [Checathlon theme](https://foxland.fi/downloads/checathlon/).
 
 It's used in [Oppimisen Talo site](https://www.oppimisentalo.fi/).
 
