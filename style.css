@@ -1,0 +1,239 @@
+/**
+ * Theme Name:  Oppimisen talo
+ * Theme URI:   https://foxland.fi/downloads/checathlon/
+ * Description: Child theme of Checathlon for oppimisentalo.fi site.
+ * Version:     1.0.0
+ * Author:      Sami Keijonen
+ * Author URI:  https://foxland.fi/
+ * Text Domain: otalo
+ * Domain Path: /languages/
+ * Tags:        one-column, grid-layout, footer-widgets, accessibility-ready, custom-background, custom-header, custom-menu, editor-style, featured-images, translation-ready, blog
+ * License:     GNU General Public License v2.0 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Template:    checathlon
+ */
+
+/**
+ * Parent theme styles are loaded automatically. So there is no need to use @import rule.
+ *
+ */
+
+/**
+ * I've collected all the colors below which helps creating your own color schemes using custom child theme.
+ *
+ * 1.  #1f1f1f - Used for example in body color, titles, link hovers, and form borders.
+ * 2.  #474747 - Used for example as background color, secondary button background, social media and tag links.
+ * 3.  #438aca - Used for example in main links, highlight color, and main button background color.
+ * 4.  #6c6c6c - Used for example as lighter or softer color for text and links.
+ * 5.  #fff    - Used for example in button text color, links or text color on darked background, and elements background color.
+ * 6.  #d4d4d4 - Used for example as main nav link colors, background color, and border colors.
+ * 7.  #e6e6e6 - Used for example as light border color, and footer widget link color.
+ * 8.  #f2f2f2 - Use for example as light background color and before footer border top color.
+ * 9.  #e1e1e1 - Used for example as pricing widget highlight color, and widget tagcloud links color.
+ * 10. #373737 - Used only as site footer background color.
+ * 11. #18ad39 - Used as security or success color in EDD (green).
+ * 12. #ffcbcb - Used as error color in EDD (red).
+ *
+ * Then there are couple of rgba colors used in the theme.
+ *
+ * 1. rgba(255, 255, 255, 0.95) - Main navigation wrapper color when mobile menu is open.
+ * 2. rgba(59, 59, 59, 0.33)    - Hover color on post thumbnail.
+ * 3. rgba(255, 255, 255, 0.1)  - Footer tagcloud link background.
+ * 4. rgba(255, 255, 255, 0.2)  - Border color for EDD loading spinner.
+ * 5. rgba(0, 0, 0, 0.1)        - Border color for dropdown menus.
+ *
+ * Note linear gradient in single background: linear-gradient(#f2f2f2, #fff 500px).
+ */
+
+/* Colors. */
+.highlight-color,
+.jetpack-testimonial .entry-inner .icon,
+.testimonial .entry-inner .icon,
+.before-footer-widgets-wrapper .icon,
+.checathlon_widget_pricing .icon {
+	color: #438aca;
+}
+
+a,
+a:visited {
+	color: #438aca;
+}
+
+.page-template-team-page .entry-title a:hover,
+.page-template-team-page .entry-title a:focus,
+.page-template-team-page .entry-title a:active {
+	color: #438aca;
+}
+
+
+@media screen and (min-width: 62.875em) {
+
+	.main-navigation a:hover,
+	.main-navigation a:focus,
+	.main-navigation a:active {
+		color: #438aca;
+	}
+
+	.main-navigation .current-menu-item > a,
+	.main-navigation .current-menu-ancestor > a {
+		color: #438aca;
+	}
+
+}
+
+/* Background colors. */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+a.button,
+a.button:visited {
+	background-color: #438aca;
+	color: #fff;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+a.button:hover,
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+a.button:focus,
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active,
+a.button:active {
+	background-color: #474747;
+	color: #fff;
+}
+
+a.button-secondary:hover,
+a.button-secondary:focus,
+a.button-secondary:active,
+a.edd-cart-saving-button.button:hover,
+a.edd-cart-saving-button.button:focus,
+a.edd-cart-saving-button.button:active,
+.edd-download-info .button.edd-demo-link:hover,
+.edd-download-info .button.edd-demo-link:focus,
+.edd-download-info .button.edd-demo-link:active,
+body .wp-core-ui .quicktags-toolbar input.button.button-small:hover,
+body .wp-core-ui .quicktags-toolbar input.button.button-small:focus,
+body .wp-core-ui .quicktags-toolbar input.button.button-small:active {
+	background-color: #438aca;
+}
+
+.menu-toggle,
+.menu-toggle:hover,
+.menu-toggle:focus,
+.menu-toggle:active {
+	background-color: transparent;
+	color: #438aca;
+}
+
+.menu-toggle.toggled {
+	color: #fff;
+}
+
+/* Borders. */
+.archive-description:before,
+.page .entry-subtitle:before,
+.single .entry-subtitle:before {
+	border-bottom-color: #438aca;
+}
+
+/* Custom styles for this theme. */
+
+@media screen and (min-width: 62.875em) {
+
+	.site-header {
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+	}
+
+}
+
+/* Front Page featured area. */
+.front-page-featured-area {
+	font-size: 1rem;
+}
+
+.front-page-featured-area .entry-title {
+	font-size: 1.25rem;
+}
+
+.front-page-featured-area .entry-title a {
+	color: #1f1f1f;
+}
+
+.front-page-image-area {
+	margin-bottom: 3.125rem;
+}
+
+.front-page-image-area > img {
+	display: block;
+}
+
+@media screen and (min-width: 48.875em) {
+
+	.front-page-extra-widget-area .grid-wrapper > .widget {
+		width: 50%;
+	}
+
+	.front-page-extra-widget-area .grid-wrapper > .widget {
+		padding-left: 2.5rem;
+	}
+
+	.front-page-otalo-info {
+		margin-bottom: 3.75rem;
+	}
+
+}
+
+@media screen and (min-width: 62.875em) {
+
+	.front-page-featured-area {
+		margin-bottom: 1.25rem;
+	}
+
+	.front-page-featured-area .grid-wrapper > .hentry,
+	.front-page-extra-widget-area .grid-wrapper > .widget {
+		width: 33.333333333%;
+	}
+
+	.front-page-extra-widget-area .grid-wrapper > .widget {
+		padding-left: 3.75rem;
+	}
+
+	.front-page-featured-area .entry-title {
+		font-size: 1.375rem;
+	}
+
+	.front-page-image-area {
+		margin-bottom: 5rem;
+	}
+
+}
+
+.single .site-content,
+.page-template-default .site-content {
+	background-color: #f2f2f2;
+	background-image: none;
+}
+
+.site-header-wrap + img {
+	width: 100%;
+}
+
+.after-content-widget-area {
+	padding-top: 0;
+}
+
+.site-title-footer,
+.site-description-footer,
+.front-page-featured-title {
+	display: none;
+}
